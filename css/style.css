@@ -1,0 +1,218 @@
+/* Start Var */
+:root{
+    --priymaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding: 8%;
+}
+/* End Var */
+/* Start scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+} 
+
+::-webkit-scrollbar-track{
+    background-color: var(--bgColor-1);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--priymaryColor);
+    border-radius: 30px;
+} 
+/* End scrollbar */
+/* Start main-setting */
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--lightColor);
+}
+span{
+    color: var(--priymaryColor);
+}
+h2{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+/* End main-setting */
+
+/* ___________________Home_______________________________ */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+    background-color:#171a1ca1 ;
+    opacity: 1;
+
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.4rem 1rem;
+
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--lightColor);
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--priymaryColor);
+}
+.btn{
+    background-color: #ff274b;
+    color:var(--lightColor);
+    padding: .81rem 1.81rem;
+    border-radius: 30px;
+    border: 1px solid #ff274b;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: transparent;
+
+}
+/* ______________________content_______________________________________ */
+.content{
+    display: flex;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-text{
+    padding:  0 var(--padding);
+    position: relative;
+    bottom: 70px;
+}
+.container-text h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+    letter-spacing: .5px;
+}
+.container-text h3{
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    margin-bottom: 3rem;
+}
+.container-text h4{
+    letter-spacing: .5px;
+    font-size: 1.25rem;
+    color: var(--secondaryColor);
+}
+.container-text .btn{
+    margin-top: 10px;
+    margin-left: -7px;
+}
+.social-icons{
+    margin: 49px 0px;
+    padding-right: 30px;
+    font-size: 2rem;
+}
+.social-icons a #linkedin{
+    color: rgb(108, 108, 209);
+}
+.social-icons a #twitter{
+    color: rgb(0, 162, 255);
+}
+.social-icons a #intsagram{
+    color: rgb(255, 0, 98);
+}
+.social-icons a #youtube{
+    color: red;
+}
+.social-icons a{
+    padding-right: 15px;
+    transition: all .5s ease-in-out;
+}
+.social-icons a:hover{
+    font-size: 1.5em;
+}
+
+.container-img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+.container-img img{
+    position: absolute;
+    bottom: -150px;
+    width: 551px;
+    height: 520px;
+    right: 3px;
+    transition: 1.5s;
+}
+.container-img img:hover{
+    right: 20px;
+    bottom: -250;
+}
+/* _______________________________________aboutme_______________ */
+
+.about-me-img img{
+    position: absolute;
+    bottom: -394px;
+    width: 403px;
+    height: 373px;
+    left: 89px;
+    transition: 1.8s;
+}
+
+.about-me-img img:hover{
+    left: 150px;
+}
+.about-me{
+    background-color: var(--bgColor-2);
+    height: 429px;
+
+}
+.about-me-text{
+    width: 448px;
+    height: 120px;
+    margin-left: 599px;
+    padding-top: 37px;
+}
+.about-me-text h1{
+    font-size: 5.8rem;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+.about-me-text p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.about-me-text .pra{
+    line-height: 23px;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+    color: var(--secondaryColor);
+    word-spacing: 1px;
+}
+.text-center{
+    text-align: center;
+}
